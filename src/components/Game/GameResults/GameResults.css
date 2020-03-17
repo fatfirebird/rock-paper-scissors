@@ -1,0 +1,23 @@
+.results-container {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 320px;
+  margin: 90px auto 181px auto;
+}
+
+.result-circle {
+  width: 95px;
+  height: 95px;
+
+  border-radius: 50%;
+
+  background-color: #192845;
+}
+
+@media (min-width: 768px) {
+  .result-circle {
+    width: 115px;
+    height: 115px;
+  }
+}

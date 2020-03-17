@@ -1,7 +1,7 @@
 .game-container {
   max-width: 320px;
 
-  background-image: url('../../images/bg-pentagon.svg');
+  background-image: url('../../../images/bg-pentagon.svg');
   background-size: 250px;
   background-repeat: no-repeat;
   background-position: center;

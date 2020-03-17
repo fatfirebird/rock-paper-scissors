@@ -3,11 +3,13 @@ import UserScore from './UserScore/UserScore'
 import logo from '../../images/logo-bonus.svg';
 import './ScoreContainer.css'
 
-const ScoreContainer = () => {
+const ScoreContainer = props => {
+  const { score } = props;
+
   return(
     <div className='score-container'>
       <img className='score-container__logo' src={logo} alt='rock paper scissors lizard spock'></img>
-      <UserScore />
+      <UserScore score={score}/>
     </div>
   )
 }

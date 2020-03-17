@@ -62,6 +62,8 @@
   }
 
   .modal__rules {
+    width: 340px;
+
     margin: 0 auto;
     padding-bottom: 50px;
 

@@ -7,7 +7,7 @@ import lizard from '../../../images/icon-lizard.svg';
 import './icon-button.css'
 
 const ButtonIcon = props => {
-  const { icon } = props;
+  const { icon, pickIcon } = props;
   let image;
 
   switch (icon) {
@@ -36,9 +36,19 @@ const ButtonIcon = props => {
   }
 
   return(
-    <div className={`icon ${icon}`}>
-      <img className='image' src={image} alt='icon'/>
-    </div>
+    <React.Fragment>
+      {
+        pickIcon 
+        ?
+          <div className={`icon ${icon}`} onClick={() => pickIcon(icon)} >
+            <img className='image' src={image} alt='icon' />
+          </div>
+        :
+          <div className={`icon ${icon}`} >
+            <img className='image' src={image} alt='icon' />
+          </div>
+      }
+    </React.Fragment>
   )
 }
 
