@@ -1,0 +1,21 @@
+.user-score {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 5%;
+}
+
+.user-score__text {
+  margin: 12px 21px 0 21px;
+
+  letter-spacing: 1px;
+  font-size: 12px;
+  color: #2a46c0;
+  text-transform: uppercase;
+}
+
+.user-score__value {
+  margin: 0;
+
+  font-size: 42px;
+  color: #3b4363;
+}

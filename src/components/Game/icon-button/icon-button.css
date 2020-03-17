@@ -1,0 +1,53 @@
+.icon {
+  width: 75px;
+  height: 75px;
+
+  background: #ffffff;
+  border-radius: 50%;
+  border: 10px solid red;
+
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.7);
+  /* transform: scale(0.7); */
+}
+
+.rock {
+  border-color: #dd405d;
+  box-shadow: 
+      inset 0px 5px 0px 1px #00000030, 
+      0px 4px 0px 0px #dc2e4e;
+}
+
+.paper {
+  border-color: #5671f5;
+  box-shadow: 
+      inset 0px 5px 0px 1px #00000030, 
+      0px 4px 0px 0px #4865f4;
+}
+
+.scissors {
+  border-color: #eca922;
+  box-shadow: 
+      inset 0px 5px 0px 1px #00000030, 
+      0px 4px 0px 0px #ec9e0e;
+}
+
+.lizard {
+  border-color: #8c5de5;
+  box-shadow: 
+      inset 0px 5px 0px 1px #00000030, 
+      0px 4px 0px 0px #834fe3;
+}
+
+.spock {
+  border-color: #52bed1;
+  box-shadow: 
+      inset 0px 5px 0px 1px #00000030, 
+      0px 4px 0px 0px #40b9ce;
+}
