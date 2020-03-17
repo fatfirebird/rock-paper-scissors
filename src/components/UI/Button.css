@@ -1,12 +1,15 @@
 .button {
   display: block;
 
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
 }
 
 .button--rules {
   width: 140px;
   height: 45px;
+
+  margin: 0 auto;
 
   background-color: transparent;
   border: 2px solid #606e85;
@@ -17,6 +20,22 @@
   letter-spacing: 1.1px;
   outline: none;
   font-weight: 600;
+}
+
+.button--close {
+  width: 20px;
+  height: 20px;
+
+  margin: 20px auto 0 auto;
+
+}
+
+@media (min-width: 768px) {
+  .button--close {
+    margin: 0px 30px 0 0;
+
+    align-self: baseline;
+  }
 }
 
 @media (min-width: 1024px) {

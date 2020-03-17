@@ -1,14 +1,18 @@
 import React from 'react'
 import img from '../../images/image-rules-bonus.svg';
 import Button from '../UI/Button';
+import './Modal.css'
 
+const Modal = props => {
+  const { openModal } = props;
 
-const Modal = () => {
   return (
-    <div>
-      <h2>Rules</h2>
-      <img src={img} alt='rules'/>
-      <Button />
+    <div className='layout'>
+      <div className='modal'>
+        <h2 className='modal__header'>Rules</h2>
+        <img className='modal__rules' src={img} alt='rules' />
+        <Button className='modal__button' name='close' openModal={openModal} />
+      </div>
     </div>
   )
 }
