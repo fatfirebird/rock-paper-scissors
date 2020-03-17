@@ -3,8 +3,10 @@ import './Button.css';
 
 
 const Button = props => {
+  const { name } = props;
+  
   return(
-    <button className='button'>{props.name}</button>
+    <button className={`button button--${name}`}>{props.name}</button>
   )
 }
 

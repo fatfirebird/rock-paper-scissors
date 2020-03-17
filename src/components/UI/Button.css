@@ -2,15 +2,25 @@
   display: block;
 
   margin: 0 auto;
+}
 
+.button--rules {
   width: 140px;
   height: 45px;
 
   background-color: transparent;
   border: 2px solid #606e85;
-  border-radius: 5%;
+  border-radius: 5px;
 
   color: #ffffff;
   text-transform: uppercase;
+  letter-spacing: 1.1px;
   outline: none;
+  font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  .button--rules {
+    margin: 0 0 0 auto;
+  }
 }
