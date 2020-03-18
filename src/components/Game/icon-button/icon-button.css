@@ -34,7 +34,7 @@
   border-color: #eca922;
   box-shadow: 
       inset 0px 5px 0px 1px #00000030, 
-      0px 6px 0px 1px #ec9e0e;
+      0px 6px 0px 0px #ec9e0e;
 }
 
 .lizard {
@@ -59,5 +59,46 @@
 
   .image {
     transform: translate(-50%, -50%) scale(1);
+  }
+
+  .icon--result {
+    width: 150px;
+    height: 150px;
+
+    border-width: 20px;
+  }
+
+  .icon--result.rock {
+      box-shadow: 
+        inset 0px 5px 0px 4px #00000030, 
+        0px 6px 0px 3px #dc2e4e;
+  }
+
+  .icon--result.spock {
+    box-shadow: 
+        inset 0px 5px 0px 4px #00000030, 
+        0px 6px 0px 3px #40b9ce;
+  }
+
+  .icon--result.lizard {
+    box-shadow: 
+        inset 0px 5px 0px 4px #00000030, 
+        0px 6px 0px 3px #834fe3;
+  }
+
+  .icon--result.paper {
+    box-shadow: 
+        inset 0px 5px 0px 4px #00000030, 
+        0px 6px 0px 3px #4865f4;
+  }
+
+  .icon--result.scissors {
+    box-shadow: 
+        inset 0px 5px 0px 4px #00000030, 
+        0px 6px 0px 3px #ec9e0e;
+  }
+
+  .icon--result .image {
+    transform: translate(-50%, -50%) scale(1.4);
   }
 }

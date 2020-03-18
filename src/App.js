@@ -69,7 +69,7 @@ const App = () => {
         playerChoice={playerChoice} 
         pickIcon={setPlayerChoice}
       />
-      <RulesContainer openModal={openModal}/>
+      <RulesContainer result={!!computerChoice} openModal={openModal}/>
       {
         modal
         &&

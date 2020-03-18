@@ -19,10 +19,18 @@
 @media (min-width: 768px) {
   .results-container {
     max-width: 420px;
+
+    margin-bottom: 0;
   }
 
   .result-circle {
-    width: 115px;
-    height: 115px;
+    width: 190px;
+    height: 190px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .results-container {
+    margin-top: 50px;
   }
 }

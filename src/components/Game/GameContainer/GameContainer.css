@@ -29,6 +29,9 @@
  @media (min-width: 768px) {
   .game-container {
     max-width: 420px;
+
+    margin-bottom: 0;
+
     background-size: 305px;
   }
  }

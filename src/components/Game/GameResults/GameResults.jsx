@@ -8,18 +8,13 @@ const GameResult = props => {
 
   const createChoices = () => 
     [playerIcon, computerIcon].map((value, id) => 
-      <Choice icon={value} bot={!!id} key={id}/>
+      <Choice icon={value} bot={!!id} key={id} className='icon--result'/>
     )
 
   const result = compare(); 
-  
-  let style;
-  if (!computerIcon) style = {
-    marginBottom: 180 + 'px',
-  }
 
   return(
-    <div className='results-container' style ={style}>
+    <div className='results-container'>
       {createChoices()}
       {
         computerIcon && <Restart result={result} restartGame={restartGame}/>

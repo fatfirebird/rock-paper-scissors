@@ -7,7 +7,7 @@ import lizard from '../../../images/icon-lizard.svg';
 import './icon-button.css'
 
 const ButtonIcon = props => {
-  const { icon, pickIcon } = props;
+  const { icon, pickIcon, className } = props;
   let image;
 
   switch (icon) {
@@ -44,7 +44,7 @@ const ButtonIcon = props => {
             <img className='image' src={image} alt='icon' />
           </div>
         :
-          <div className={`icon ${icon}`} >
+          <div className={`icon ${icon} ${className}`} >
             <img className='image' src={image} alt='icon' />
           </div>
       }

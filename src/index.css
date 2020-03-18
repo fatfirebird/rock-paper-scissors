@@ -12,3 +12,22 @@ html, body {
   margin: 30px;
 }
 
+.results-container + .button-container:not(.button-container--result) {
+  margin-top: 180px;
+}
+
+@media(min-width: 768px) {
+  .game-container + .button-container {
+    margin-top: 84px;
+  }
+
+ @media(min-width: 1024px) {
+  .game-container + .button-container {
+    margin-top: -6px;
+  }
+
+  .results-container + .button-container:not(.button-container--result) {
+    margin-top: 130px;
+  }
+ } 
+}
