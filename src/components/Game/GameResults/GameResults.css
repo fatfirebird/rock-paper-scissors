@@ -31,6 +31,8 @@
 
 @media (min-width: 1024px) {
   .results-container {
+    max-width: 650px;
+
     margin-top: 50px;
   }
 }

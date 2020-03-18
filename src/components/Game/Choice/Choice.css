@@ -13,3 +13,13 @@
   text-transform: uppercase;
   letter-spacing: 1.1px;
 }
+
+@media (min-width: 1024px) {
+  .result-icon:nth-child(1) {
+    order: 1;
+  }
+
+  .result-icon:nth-child(2) {
+    order: 3;
+  }
+}
