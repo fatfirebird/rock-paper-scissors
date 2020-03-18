@@ -1,7 +1,7 @@
-import React from 'react'
-import UserScore from './UserScore/UserScore'
+import React from 'react';
+import UserScore from './UserScore/UserScore';
 import logo from '../../images/logo-bonus.svg';
-import './ScoreContainer.css'
+import './ScoreContainer.css';
 
 const ScoreContainer = props => {
   const { score } = props;

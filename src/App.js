@@ -24,21 +24,16 @@ const App = () => {
 
   }, [playerChoice]);
 
-  useEffect(() => {
-    const prevScore = localStorage.getItem('score');
-    if (prevScore) return setScore(prevScore);
-  }, []);
-
-  useEffect(() => {
-    console.log(123);
-    const newScore = score + compare();
-    setScore(newScore);
+  useEffect(() => {   
+    const prevScore = +localStorage.getItem('score');
+    const newScore = prevScore + compare();
     localStorage.setItem('score', newScore);
+    setScore(newScore);
   }, [computerChoice])
 
   const compare = () => {
     if (computerChoice === playerChoice) return 0;
-    
+
     const rules = {
       'paper': ['rock', 'spock'],
       'rock': ['scissors', 'lizard'],
