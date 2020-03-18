@@ -52,12 +52,23 @@ const App = () => {
     return setModal(true);
   }
 
-  const getRandom = max => Math.floor(Math.random() * Math.floor(max))
+  const getRandom = max => Math.floor(Math.random() * Math.floor(max));
+
+  const restartGame = () => {
+    setPlayerChoice(null);
+    setComputerChoice(null);
+  }
 
   return(
     <main className='main-container'>
       <ScoreContainer score={score}/>
-      <Game computerChoice={computerChoice} playerChoice={playerChoice} pickIcon={setPlayerChoice}/>
+      <Game 
+        restartGame={restartGame} 
+        compare={compare} 
+        computerChoice={computerChoice} 
+        playerChoice={playerChoice} 
+        pickIcon={setPlayerChoice}
+      />
       <RulesContainer openModal={openModal}/>
       {
         modal

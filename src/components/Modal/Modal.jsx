@@ -11,7 +11,7 @@ const Modal = props => {
       <div className='modal'>
         <h2 className='modal__header'>Rules</h2>
         <img className='modal__rules' src={img} alt='rules' />
-        <Button className='modal__button' name='close' openModal={openModal} />
+        <Button className='modal__button' name='close' onClick={openModal} />
       </div>
     </div>
   )

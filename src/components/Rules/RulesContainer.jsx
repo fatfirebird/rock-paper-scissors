@@ -7,7 +7,7 @@ const RulesContainer = props => {
 
   return (
     <div className='button-container'>
-      <Button name='rules' openModal={openModal}/>
+      <Button name='rules' onClick={openModal}/>
     </div>
   )
 }

@@ -1,0 +1,17 @@
+.restart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 20px auto 0 auto;
+}
+
+.restart__text {
+  margin: 0 0 15px 0;
+
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
