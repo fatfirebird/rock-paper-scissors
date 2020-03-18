@@ -1,12 +1,13 @@
 .icon {
+  position: relative;
+  z-index: 10;
+
   width: 75px;
   height: 75px;
 
   background: #ffffff;
   border-radius: 50%;
   border: 10px solid red;
-
-  position: relative;
 }
 
 .image {

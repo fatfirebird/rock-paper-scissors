@@ -3,7 +3,7 @@ import GameContainer from './GameContainer/GameContainer.jsx';
 import GameResults from './GameResults/GameResults.jsx';
 
 const Game = props => {
-  const { playerChoice, computerChoice, pickIcon, compare, restartGame } = props;
+  const { playerChoice, computerChoice, pickIcon, restartGame, winner } = props;
 
   return(
     <React.Fragment>
@@ -12,7 +12,7 @@ const Game = props => {
         ?
         <GameContainer pickIcon={pickIcon}/>
         :
-        <GameResults restartGame={restartGame} compare={compare} computerIcon={computerChoice} playerIcon={playerChoice}/>
+        <GameResults winner={winner} restartGame={restartGame} computerIcon={computerChoice} playerIcon={playerChoice}/>
       }
     </React.Fragment>
   )

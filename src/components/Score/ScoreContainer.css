@@ -27,3 +27,10 @@
     padding: 15px 25px 15px 30px;
   }
 }
+
+@media (min-width: 1024px) {
+  .score-container {
+    position: relative;
+    z-index: 10;
+  }
+}

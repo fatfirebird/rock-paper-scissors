@@ -10,6 +10,7 @@ const App = () => {
   const [playerChoice, setPlayerChoice] = useState(null);
   const [computerChoice, setComputerChoice] = useState(null);
   const [score, setScore] = useState(0);
+  const [winner, setWinner] = useState();
 
   useEffect(() => {
     setTimeout(() => {
@@ -26,9 +27,11 @@ const App = () => {
 
   useEffect(() => {   
     const prevScore = +localStorage.getItem('score');
-    const newScore = prevScore + compare();
+    const result = compare();
+    const newScore = prevScore + result;
     localStorage.setItem('score', newScore);
     setScore(newScore);
+    chooseWinner(result);
   }, [computerChoice])
 
   const compare = () => {
@@ -59,12 +62,18 @@ const App = () => {
     setComputerChoice(null);
   }
 
+  const chooseWinner = result => {
+    if (result === 1) return setWinner('player');
+    if (result === 0) return setWinner('draw');
+    return setWinner('computer')
+  }
+
   return(
     <main className='main-container'>
       <ScoreContainer score={score}/>
       <Game 
+        winner={winner}
         restartGame={restartGame} 
-        compare={compare} 
         computerChoice={computerChoice} 
         playerChoice={playerChoice} 
         pickIcon={setPlayerChoice}

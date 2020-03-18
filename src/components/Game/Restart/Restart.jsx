@@ -7,13 +7,13 @@ const Restart = props => {
   let text;
 
   switch (result) {
-    case 1:
+    case 'player':
       text = 'You win';
       break;
-    case 0:
+    case 'draw':
       text = 'Draw'
       break;
-    case -1:
+    case 'computer':
       text = 'You lose'
       break;
     default:
