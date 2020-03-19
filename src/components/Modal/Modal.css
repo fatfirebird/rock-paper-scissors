@@ -7,6 +7,8 @@
   height: 100vh;
 
   background-color: #00000070;
+
+  z-index: 20;
 }
 
 .modal {
@@ -20,6 +22,8 @@
   background-color: #ffffff;
   border-radius: 10px;
   text-align: center;
+
+  z-index: 20;
 }
 
 .modal__header {
